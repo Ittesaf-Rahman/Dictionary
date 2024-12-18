@@ -1,0 +1,37 @@
+# All About Dictionary
+info = {'Name' : 'Ittesaf Rahman', 'Class' : '07', 'Year' : 2024}
+print(info)
+print(info['Name'])
+info['Other'] = 'Happy New Year'
+print(info)
+
+
+#Activity 1
+information = {'id1' : {'Name' : 'Ittesaf', 'Class' : [7], 'Subject' : ['Bangla', 'English', 'Math']},
+               'id2' : {'Name' : 'Rahman', 'Class' : [7], 'Subject' : ['bangla', 'English', 'Math']}}
+result = {}
+for key,value in information.items():
+    if value not in result.values():
+        result[key] = value
+print(result)
+
+
+
+#Activity 2
+Test = {'Name' : 2, 'Student Name' : 2, 'A Human' : 'Ittesaf', 'Other' : 'Azmain'}
+name = 2
+inc = 0
+for key in Test:
+    if Test[key] == name:
+        inc = inc + 1
+print(inc)
+
+
+
+
+#Activity 3
+country = {'Bangladesh' : '+880', 'India' : '+91'}
+print('We found Bangladesh')
+print(country.get('Bangladesh'), 'We can not found bangladesh')
+print('We found Japan')
+print(country.get('Japan'), 'We can not found Japan')
